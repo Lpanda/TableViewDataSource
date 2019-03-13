@@ -14,6 +14,9 @@
 		0D6A22B42238E83100ABF822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6A22B22238E83100ABF822 /* LaunchScreen.storyboard */; };
 		0D6A22BF2238E83100ABF822 /* TableViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A22BE2238E83100ABF822 /* TableViewDataSourceTests.swift */; };
 		0D6A22CA2238E83100ABF822 /* TableViewDataSourceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A22C92238E83100ABF822 /* TableViewDataSourceUITests.swift */; };
+		0D6A22DA2238E97500ABF822 /* BaseCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A22D82238E97400ABF822 /* BaseCellProtocol.swift */; };
+		0D6A22DB2238E97500ABF822 /* BaseCellModelProcotol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A22D92238E97500ABF822 /* BaseCellModelProcotol.swift */; };
+		0D6A22DD2238E98B00ABF822 /* TableDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A22DC2238E98B00ABF822 /* TableDatasource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		0D6A22C52238E83100ABF822 /* TableViewDataSourceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewDataSourceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6A22C92238E83100ABF822 /* TableViewDataSourceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSourceUITests.swift; sourceTree = "<group>"; };
 		0D6A22CB2238E83100ABF822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D6A22D82238E97400ABF822 /* BaseCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCellProtocol.swift; sourceTree = "<group>"; };
+		0D6A22D92238E97500ABF822 /* BaseCellModelProcotol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCellModelProcotol.swift; sourceTree = "<group>"; };
+		0D6A22DC2238E98B00ABF822 /* TableDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDatasource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		0D6A22A82238E83000ABF822 /* TableViewDataSource */ = {
 			isa = PBXGroup;
 			children = (
+				0D6A22D72238E94800ABF822 /* Common */,
 				0D6A22A92238E83000ABF822 /* AppDelegate.swift */,
 				0D6A22AB2238E83000ABF822 /* ViewController.swift */,
 				0D6A22AD2238E83000ABF822 /* Main.storyboard */,
@@ -123,6 +130,16 @@
 				0D6A22CB2238E83100ABF822 /* Info.plist */,
 			);
 			path = TableViewDataSourceUITests;
+			sourceTree = "<group>";
+		};
+		0D6A22D72238E94800ABF822 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0D6A22DC2238E98B00ABF822 /* TableDatasource.swift */,
+				0D6A22D92238E97500ABF822 /* BaseCellModelProcotol.swift */,
+				0D6A22D82238E97400ABF822 /* BaseCellProtocol.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D6A22DD2238E98B00ABF822 /* TableDatasource.swift in Sources */,
+				0D6A22DB2238E97500ABF822 /* BaseCellModelProcotol.swift in Sources */,
 				0D6A22AC2238E83000ABF822 /* ViewController.swift in Sources */,
+				0D6A22DA2238E97500ABF822 /* BaseCellProtocol.swift in Sources */,
 				0D6A22AA2238E83000ABF822 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
