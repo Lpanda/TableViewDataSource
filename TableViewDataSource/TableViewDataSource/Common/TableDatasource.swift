@@ -26,7 +26,7 @@ extension TableDatasource:UITableViewDataSource {
             return UITableViewCell()
         }
         
-        cell.updateCell(cellViewModel: cellModel as! NSObject)
+        cell.updateCell(cellViewModel: cellModel)
         
         return cell as! UITableViewCell
     }

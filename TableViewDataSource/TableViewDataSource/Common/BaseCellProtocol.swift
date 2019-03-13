@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 protocol BaseCellProtocol {
-    func updateCell(cellViewModel : NSObject) -> Void
     
-    static func heightForViewModel(cellViewModel : NSObject, atIndex index : IndexPath ,tableView : UITableView ) -> CGFloat
+    func updateCell(cellViewModel : BaseCellModelProtocol?)
+    
+    static func heightForViewModel(cellViewModel : BaseCellModelProtocol, atIndex index : IndexPath ,tableView : UITableView ) -> CGFloat
 }
